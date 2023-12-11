@@ -1,0 +1,130 @@
+/* PackageList.css */
+
+/* General Styles */
+.package-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Table Styles */
+.package-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-table th,
+.package-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.package-table th {
+  background-color: #f0f0f0;
+}
+
+.package-table td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.package-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Package Item Styles */
+.package-item {
+  transition: background-color 0.3s ease;
+}
+
+.package-item:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.pagination button {
+  padding: 8px;
+  margin: 0 4px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+/* ... (Your existing styles) */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the block horizontally */
+}
+
+.editable-selector {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Add margin between the two selectors */
+  min-width: 80px; /* Adjust the width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+}
+
+.items-per-page label {
+  margin-right: 10px; /* Add margin between the label and the input */
+}
+
+.package-item.unavailable {
+  background-color: #f8d7da; /* Red background for unavailable items */
+  color: #721c24; /* Dark text color for unavailable items */
+}
+
+/* Updated styles for available and unavailable counts */
+.available-count {
+  color: #28a745; /* Green color for available items */
+}
+
+.unavailable-count {
+  color: #dc3545; /* Red color for unavailable items */
+}
+
